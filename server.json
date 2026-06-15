@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.squirrelbrainapp/squirrel-brain",
+  "title": "Squirrel Brain",
+  "description": "Give your AI agent a memory and a body on the user's iPhone: save notes, set real alarms, ring the user's phone, file photos to boards, and send their daily brief — over MCP.",
+  "version": "1.0.0",
+  "websiteUrl": "https://squirrelbrainapp.com/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://geczbtsjfbvfukdzdemr.supabase.co/functions/v1/mcp-server",
+      "headers": [
+        { "name": "X-API-Key", "description": "Your personal Squirrel Brain key from the iOS app (Settings -> API keys; starts with sb_)", "isRequired": true, "isSecret": true },
+        { "name": "Authorization", "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdlY3pidHNqZmJ2ZnVrZHpkZW1yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTA1OTksImV4cCI6MjA5MzQyNjU5OX0.Rdn6ujhp8t1qJNBmAc8VmV5xst10tpSzXh5tt6VCptM", "isRequired": true },
+        { "name": "apikey", "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdlY3pidHNqZmJ2ZnVrZHpkZW1yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTA1OTksImV4cCI6MjA5MzQyNjU5OX0.Rdn6ujhp8t1qJNBmAc8VmV5xst10tpSzXh5tt6VCptM", "isRequired": true }
+      ]
+    }
+  ]
+}
